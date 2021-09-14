@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="person" class="com.collection.Person">   
+
+	<property name="name" value="Ayoob"/>
+	
+	<property name="phones">
+	
+		<list>
+			<value>03022685655</value>
+			<value>03431813915</value>
+			<value>03045678654</value>
+		
+		</list>
+	
+	</property>
+	
+	
+	<property name="addresses">
+		<set>
+			<value>Bandhi</value>
+			<value>Hyderabad</value>
+			<value>Jamshoro</value>
+			
+		
+		</set>
+	</property>
+</bean>  
+  
+</beans>  
